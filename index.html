@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Graphs</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>My Graphs</h1>
+    
+    <div id="temperatureGraph"></div>
+    <div id="pressureGraph"></div>
+    <div id="accelerationGraph"></div>
+    <div id="altitudeGraph"></div>
+    
+    <script>
+        // Fetch the data from the HTML files
+        fetch('temperature.html')
+            .then(response => response.text())
+            .then(data => {
+                var temperatureGraphElement = document.getElementById('temperatureGraph');
+                temperatureGraphElement.innerHTML = data;
+            });
+
+        fetch('pressure.html')
+            .then(response => response.text())
+            .then(data => {
+                var pressureGraphElement = document.getElementById('pressureGraph');
+                pressureGraphElement.innerHTML = data;
+            });
+
+        fetch('acceleration.html')
+            .then(response => response.text())
+            .then(data => {
+                var accelerationGraphElement = document.getElementById('accelerationGraph');
+                accelerationGraphElement.innerHTML = data;
+            });
+
+        fetch('altitude.html')
+            .then(response => response.text())
+            .then(data => {
+                var altitudeGraphElement = document.getElementById('altitudeGraph');
+                altitudeGraphElement.innerHTML = data;
+            });
+    </script>
+</body>
+</html>
