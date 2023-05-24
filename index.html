@@ -1,33 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Experiment Summary</title>
+    <title>ECHS HAB Data</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-
-        h2 {
-            font-size: 20px;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
         .graph-container {
             width: 100%;
             height: 400px;
@@ -36,47 +11,22 @@
     </style>
 </head>
 <body>
-    <h1>Experiment Summary</h1>
+    <h1 style="font-family:verdana">ECHS HAB Data</h1>
 
-    <div class="section">
-        <h2>Abstract</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa sed lacus sagittis finibus eu non turpis.</p>
+    <div class="graph-container">
+        <iframe src="temperature.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
 
-    <div class="section">
-        <h2>Introduction</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa sed lacus sagittis finibus eu non turpis.</p>
+    <div class="graph-container">
+        <iframe src="pressure.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
 
-    <div class="section">
-        <h2>Materials and Procedure</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa sed lacus sagittis finibus eu non turpis.</p>
+    <div class="graph-container">
+        <iframe src="acceleration.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
 
-    <div class="section">
-        <h2>Results/Data</h2>
-        <div class="graph-container">
-            <iframe src="temperature.html" frameborder="0" width="100%" height="100%"></iframe>
-        </div>
-        <div class="graph-container">
-            <iframe src="pressure.html" frameborder="0" width="100%" height="100%"></iframe>
-        </div>
-        <!-- Add more graphs here -->
-    </div>
-
-    <div class="section">
-        <h2>Analysis/Conclusions</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa sed lacus sagittis finibus eu non turpis.</p>
-    </div>
-
-    <div class="section">
-        <h2>Future Work/Next Steps/Questions</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa sed lacus sagittis finibus eu non turpis.</p>
-    </div>
-
-    <div class="section">
-        <h2>Acknowledgements</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa sed lacus sagittis finibus eu non turpis.</p>
+    <div class="graph-container">
+        <iframe src="altitude.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
 </body>
 </html>
